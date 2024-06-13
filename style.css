@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #00796b;
+}
+
+.search button {
+    background: #00796b;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.search button:hover {
+    background: #004d40;
+}
+
+.search img {
+    width: 20px;
+}
+
+.display {
+    text-align: center;
+}
+
+.display img {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.display img:hover {
+    transform: rotate(360deg);
+}
+
+.display h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #00796b;
+}
+
+.display h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .search input {
+        width: 60%;
+    }
+
+    .display img {
+        width: 100px;
+    }
+
+    .display h1 {
+        font-size: 2em;
+    }
+
+    .display h2 {
+        font-size: 1.2em;
+    }
+}
+.col{
+    width:40px;
+   display: flex;
+   margin-right: 10px;
+   gap:25px;
+    
+}
+.col p{
+    color:#fff;
+}
+.display h1,.display h2{
+    color:#fff;
+}
+.humidity, .wind{
+ font-size: 20px;
+
+}
+.col img{
+    width:4.2rem;
+    height:3.8rem;
+}
